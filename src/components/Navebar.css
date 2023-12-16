@@ -1,0 +1,144 @@
+/* start navebar coding */
+* {
+    margin: 0px;
+  }
+  
+  #Side_navigation {
+    background: linear-gradient(0deg, #020830 0%, #020830 100%);
+    position: fixed;
+    top: 0px;
+    height: 75px;
+    left: 0px;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+  }
+  
+  .overlay-content {
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .overlay-content{
+    box-sizing: border-box;
+    transition: all .35s ease;
+  }
+  
+  .overlay-content a{
+    display: inline-block;
+    list-style: outside none none;
+    padding: 0;
+  }
+  
+  .overlay-content a {
+    padding: .5em .8em;
+    color: rgba(255,255,255,.5);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .overlay-content a::before,
+  .overlay-content a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  
+  .overlay-content a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #896a14;
+    border-right: 3px solid #64540f;
+    transform: translate(-100%, 50%);
+  }
+  
+  .overlay-content a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #64630f;
+    border-left: 3px solid #896414;
+    transform: translate(100%, -50%)
+  }
+  
+  .overlay-content a:hover:before,
+  .overlay-content a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  .overlay-content a:hover {
+    color: #a39c3d;
+  }
+  .overlay {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-family: "Nova Square", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 30px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+  }
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (max-width: 992px) {
+  }
+  

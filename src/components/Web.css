@@ -1,0 +1,17 @@
+
+.swiper-wrapper {
+    height: 100vh !important;
+  }
+  /* Add this to your CSS file or style section */
+  .mySwiper .swiper-pagination-bullet {
+    width: 8px; /* Set the width of the bullet */
+    height: 8px; /* Set the height of the bullet */
+    background-color: #f7973b; /* Set the default background color */
+    opacity: 0.7; /* Set the default opacity */
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .mySwiper .swiper-pagination-bullet-active {
+    background-color: white; /* Set the active bullet background color */
+    opacity: 1; /* Set the active bullet opacity */
+  }

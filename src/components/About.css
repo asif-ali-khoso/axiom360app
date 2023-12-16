@@ -1,0 +1,247 @@
+/* General Styles */
+.About_us {
+  padding: 100px;
+  background-image: url("/public/about.png");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  width: 100%;
+}
+
+.About_us h1 {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Monoton', sans-serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+}
+
+.About_us h6 {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/* Box Styles */
+.Box_about {
+  height: 200px;
+  width: 1000px;
+  background-color: rgba(2, 8, 48, 0.8);
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 9px;
+  padding: 19px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#text_about {
+  height: 400px;
+  width: 550px;
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+/* Get Started Section Styles */
+.getstart_section {
+  height: 100px;
+  background-color: rgba(2, 8, 48, 0.8);
+  border-radius: 9px;
+  padding-left: 5px;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+#lineAbout {
+  border: 1px solid rgba(244, 126, 52, 1);
+  width: 33px;
+  height: 1px;
+  margin-top: 11px;
+  margin-left: -10px;
+}
+
+#text_letstarted {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  color: white;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.getstart_section h6 {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 200;
+  color: #f7973b;
+  margin-left: 20px;
+}
+
+/* Learn More Abbreviation Styles */
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+
+.learn-more-abbr {
+  background: transparent;
+  border: 0px;
+  position: relative;
+  padding: 0.6rem 1rem;
+}
+
+.learn-more-abbr .text {
+  width: 100%;
+  -webkit-background-clip: text;
+  z-index: 1;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  font-weight: 300;
+  color: white;
+  font-size: 20px;
+}
+
+.learn-more-abbr::before {
+  width: 0%;
+  height: 60px;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #f7973b;
+  z-index: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.learn-more-abbr::after {
+  width: 25px;
+  height: 60px;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #f7973b;
+  z-index: 0;
+  border-left: 2px solid white;
+  -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+  transition: 0.4s ease-in-out;
+}
+
+.learn-more-abbr:hover::before {
+  width: 100%;
+}
+
+.learn-more-abbr:hover::after {
+  left: 99.5%;
+}
+
+/* Triangle Styles */
+.triangle {
+  position: absolute;
+  margin-top: 200px;
+  width: 300px;
+  margin-left: 14px;
+}
+
+.triangle > div {
+  width: 364px;
+  height: 2px;
+  background: rgba(255, 255, 255, 1);
+  margin-right: -8px;
+  margin-top: 130px;
+  margin-left: -51px;
+}
+
+.triangle > div:after {
+  content: " ";
+  display: block;
+  width: 364px;
+  height: 2px;
+  background: rgba(255, 255, 255, 1);
+  transform: rotate(-60deg);
+  position: absolute;
+  top: -116px;
+  left: -142px;
+  margin-top: 88px;
+}
+
+.triangle > div:before {
+  content: " ";
+  display: block;
+  width: 362px;
+  height: 2px;
+  background: rgba(255, 255, 255, 1);
+  transform: rotate(60deg);
+  position: absolute;
+  top: -94px;
+  right: -102px;
+  margin-top: 66px;
+}
+
+.triangle {
+  transition: transform 2s ease;
+}
+
+.triangle:hover:nth-child(odd) {
+  transform: rotate(360deg);
+  z-index: 2;
+}
+
+.triangle:hover:nth-child(even) {
+  transform: rotate(-360deg);
+  z-index: 2;
+}
+
+/* About Image Styles */
+.about_img {
+  background-image: url("/public/Group 105.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 355px;
+  max-width: 340px;
+  z-index: 2;
+}
+
+/* Media Queries */
+@media (max-width: 1199.98px) {
+  .About_us h1 {
+      font-size: 70px;
+  }
+  .about_img{
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .About_us h1 {
+      font-size: 29px;
+  }
+  .About_us h6 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0em;
+    /* text-align: left; */
+}
+
+  .Box_about {
+      width: 153%;
+  }
+
+  #text_about {
+      width: 70%;
+  }
+}
