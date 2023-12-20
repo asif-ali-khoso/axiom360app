@@ -25,8 +25,8 @@ function Homecontent() {
                 reality to make your brand go from ordinary to extraordinary.
                 Let’s take your business to the next level!
               </p>
-              <div className="d-flex ">
-                <button className="learn-more">
+              <div className="d-flex">
+                <button className="learn-more justify-content-center align-content-center">
                   <span className="text">Explore Services</span>
                 </button>
                 <span id="line"></span>

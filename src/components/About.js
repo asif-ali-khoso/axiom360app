@@ -44,16 +44,15 @@ function About() {
         </div>
         <div className="getstart_section">
           <div className="row">
-            <div className="col-lg-10">
+            <div className="col-lg-10 col-md-10 col-sm-10">
               <h6>Let’s Get Started</h6>
               <p id="text_letstarted">
                 Lorem ipsum is simply dummy text of the printing and
                 typesetting. Lorem Ipsum<br /> has been the industry’s standard dummy.
               </p>
             </div>
-            <div className="col-lg-2">
-              <br />
-              <div className="d-flex align-items-center">
+            <div className="col-lg-2 col-md-2 col-sm-2">
+              <div className="d-flex align-items-center justify-content-center mt-3">
                 <button className="learn-more-abbr">
                   <span className="text">Learn More</span>
                 </button>

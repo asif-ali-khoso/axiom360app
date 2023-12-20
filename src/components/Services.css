@@ -7,10 +7,7 @@
       background-color: black;
       height: 100vh;
   }
-  .mySwiper_c{
-    height: 380px;
-    width: 100%;
-  }
+  
   .Services_section h1{
     font-family: 'Monoton', sans-serif;
     font-size: 60px;
@@ -22,15 +19,13 @@
     text-align: left;
   }
   .Services_section h2{
-    color: rgba(2, 8, 48, 1);
+  color: rgba(2, 8, 48, 1);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: 'Monoton', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   text-align: left;
-
-  
   }
   .Services_section h3{
     color: #FFF;
@@ -56,7 +51,7 @@
   margin-top: 50px;
   }
   #services-1 img{
-      width: 300px;
+      max-width: 300px;
       border-radius: 20px;
   }
   .View_more1{
@@ -178,3 +173,85 @@
     margin-left: -13px;
   }
     
+
+
+  @media only screen and (max-width: 992px) {
+    .Services_section{
+      padding: 50px;
+        
+    }
+    .Services_section h1{
+      font-family: 'Monoton', sans-serif;
+      font-size: 40px;
+      font-weight: 400;
+      text-align: center;
+      color: rgba(2, 8, 48, 1);
+   
+    }
+    .Services_section h2{
+      color: rgba(2, 8, 48, 1);
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-family: 'Monoton', sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      text-align: center;
+      }
+      .Services_section h3{
+        color: #FFF;
+        font-family: 'Lato', sans-serif;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      text-align: center;
+      }
+  
+      #services-1 h6{
+        color:rgba(2, 8, 48, 1);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: left;
+      font-family: 'Lato', sans-serif;
+      }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .Services_section h1{
+      font-family: 'Monoton', sans-serif;
+      font-size: 30px;
+      font-weight: 400;
+      text-align: center;
+      color: rgba(2, 8, 48, 1);
+    }
+    .Services_section h2{
+      color: rgba(2, 8, 48, 1);
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-family: 'Monoton', sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      text-align: center;
+      }
+      .Services_section h3{
+        color: #FFF;
+        font-family: 'Lato', sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      text-align: center;
+      }
+    #services-1 h6{
+      color:rgba(2, 8, 48, 1);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    }
+
+  }

@@ -10,14 +10,14 @@ function Services() {
       {/* <Particle_Servies/> */}
     <div className="Services_section">
       <div className="container">
-        <h1>
+        <h1 className="text-white">
           Services
           <br />
         </h1>
- <h2>That Best Defines Us</h2>
+ <h2 className="text-white">That Best Defines Us</h2>
  <h3 className="text-white">What We Do</h3>
  <div className="row">
-          <div className="col-lg-8">
+          <div className="col-lg-8 col-md-4">
           <Swiper
               effect={'coverflow'}
               grabCursor={true}
@@ -37,7 +37,6 @@ function Services() {
             >
               <SwiperSlide id="services-1">
                 <h6 className="text-center">DESIGN</h6>
-
                 <div className="flip-card">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
@@ -45,7 +44,7 @@ function Services() {
                         src="image 10.png"
                         alt=""
                         className="img-fluid"
-                        style={{ height: "250px", maxWidth: "230px" }}
+                        style={{ height: "100%", maxWidth: "230px" }}
                       />
                     </div>
                     <div className="flip-card-back">
@@ -70,7 +69,7 @@ function Services() {
                         alt=""
                         className="img-fluid"
                         style={{
-                          height: "250px",
+                          height: "100%",
                           maxWidth: "230px",
                           borderRadius: "30px",
                         }}
@@ -98,7 +97,7 @@ function Services() {
                         alt=""
                         className="services2.png"
                         style={{
-                          height: "250px",
+                          height: "100%",
                           maxWidth: "230px",
                           borderRadius: "30px",
                         }}
@@ -126,7 +125,7 @@ function Services() {
                         alt=""
                         className="img-fluid"
                         style={{
-                          height: "250px",
+                          height: "100%",
                           maxWidth: "230px",
                           borderRadius: "30px",
                         }}
@@ -154,7 +153,7 @@ function Services() {
                         alt=""
                         className="img-fluid"
                         style={{
-                          height: "250px",
+                          height: "100%",
                           maxWidth: "230px",
                           borderRadius: "30px",
                         }}
@@ -182,7 +181,7 @@ function Services() {
                         alt=""
                         className="img-fluid"
                         style={{
-                          height: "250px",
+                          height: "100%",
                           maxWidth: "230px",
                           borderRadius: "30px",
                         }}
@@ -208,7 +207,7 @@ function Services() {
                         src="image 10.png"
                         alt=""
                         className="img-fluid"
-                        style={{height: "250px", maxWidth: "230px",borderRadius: "30px",}}/>
+                        style={{height: "100%", maxWidth: "230px",borderRadius: "30px",}}/>
                     </div>
                     <div className="flip-card-back">
                       <p className="text-center">

@@ -14,7 +14,9 @@
     display: flex;
     align-items: center;
   }
-  
+  #myNav.overlay {
+    width: 500px;
+  }
   .overlay-content {
     font-family: 'Titillium Web';
     text-transform: uppercase;
@@ -140,5 +142,45 @@
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (max-width: 992px) {
+    #myNav.overlay {
+      width: 500px;
+    }
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 15px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+      font-family: "Nova Square", sans-serif;
+      font-family: "Open Sans", sans-serif;
   }
+    
+  }
+
+  /* Navebar.css */
+
+/* Your existing styles here */
+
+/* Add media query for smaller devices */
+@media only screen and (max-width: 768px) {
+  #myNav.overlay {
+    width: 100%; /* Set the width to 100% for smaller devices */
+  }
+   
+  #Side_navigation {
+    background: linear-gradient(0deg, #020830 0%, #020830 100%);
+    position: fixed;
+    top: 0px;
+    height: 60px;
+    left: 0px;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+  }
+  
+
+}
+
   

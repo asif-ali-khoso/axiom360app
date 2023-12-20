@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
+import Fonm from "./Form";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -49,18 +50,18 @@ function Contact() {
             <h1>CONTACT US</h1>
           </div>
           <div className="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
-            <img src="Ellipse 20.svg" alt="Help Icon" />
+            <img src="Ellipse 20.svg" alt="Help Icon" className="img-fluid" />
             <p>Need Help?</p>
           </div>
         </div>
         <div className="row">
           <div className="col-lg-8 col-md-12">
+            <h3>
+              Questions?
+              <br />
+              Let's Get In Touch
+            </h3>
             <form id="form" onSubmit={handleSubmit}>
-              <h3>
-                Questions?
-                <br />
-                Let's Get In Touch
-              </h3>
               <input
                 type="text"
                 name="name"
@@ -121,6 +122,9 @@ function Contact() {
                   </button>
                   <span id="line_wit"></span>
                 </div>
+                <div>
+                  <Fonm />
+                </div>
               </div>
               <div className="col-lg-4" id="button_2">
                 <span id="follow">Follow us</span>
@@ -128,18 +132,26 @@ function Contact() {
                 <a href="#!">
                   <i className="fa fa-facebook"></i>
                 </a>
-                <a href="#!"><i  className="fa fa-twitter"></i></a>
-                <a href="#!"><i className="fa fa-instagram"></i></a>
-                <a href="#!"><i className="fa fa-linkedin"></i></a>
+                <a href="#!">
+                  <i className="fa fa-twitter"></i>
+                </a>
+                <a href="#!">
+                  <i className="fa fa-instagram"></i>
+                </a>
+                <a href="#!">
+                  <i className="fa fa-linkedin"></i>
+                </a>
               </div>
             </div>
           </div>
           <div className="col-lg-4 col-md-12" id="office_locat">
-            <h3>Office Location</h3>
-            <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered.
-            </p>
+            <div className="hide">
+              <h3>Office Location</h3>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered.
+              </p>
+            </div>
             <div className="links_name">
               <a href="#!">Legal</a>
               <a href="#!">Cookies</a>

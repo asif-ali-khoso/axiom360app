@@ -32,7 +32,7 @@
 
 .content h2 {
   background: linear-gradient(90deg, #f7973b 0%, #f15829 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Lato', sans-serif;
   font-size: 25px;
@@ -43,14 +43,14 @@
 
 .content p {
   background: linear-gradient(90deg, #f7973b 0%, #f15829 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
   font-size: 18px;
   color: white;
 }
 
 #content_text {
   background: linear-gradient(90deg, #fff 0%, #f15829 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: blur(1.25px);
 }
@@ -68,14 +68,14 @@
 
 .content h4 {
   background: linear-gradient(90deg, #fff 0%, #f15829 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: blur(1.25px);
 }
 
 .content h5 {
   background: linear-gradient(90deg, #f7973b 0%, #f15829 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 20px;
   font-weight: bold;
@@ -124,25 +124,21 @@
       padding: 0px;
       text-align: center;
   }
-  .mySwiper_b .swiper-slide-active h2 {
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-}
+ 
 }
 
 @media (max-width: 768px) {
   .content {
       padding: 100px;
   }
-
+ 
   #line {
       border: 1px solid wheat;
       width: 30px;
       height: 1px;
       margin-top: 0px;
   }
-
+  
   .content h3 {
       color: #fff;
       font-family: "Monoton", sans-serif;
@@ -170,7 +166,7 @@
 }
 .content h2 {
   background: linear-gradient(90deg, #f7973b 0%, #f15829 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Lato', sans-serif;
   font-size: 19px;
@@ -179,11 +175,7 @@
   text-align: left;
   text-align: center;
 }
-.mySwiper_b .swiper-slide-active h2 {
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-}
+
 }
 
 @media (max-width: 992px) {
@@ -193,7 +185,7 @@
 
   .learn-more .text {
       background: linear-gradient(90deg, #f7973b 0%, #f15829 100%);
-      background-clip: text;
+      -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       z-index: 1;
       position: relative;
@@ -201,23 +193,14 @@
       font-weight: 700;
       font-size: 12px;
   }
-  .mySwiper_b .swiper-slide-active h2 {
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-  }
+  
+    
 }
 
 @media (max-width: 1024px) {
   .content {
-      padding: 100px;
+      padding: 83px 40px;
   }
-  .mySwiper_b .swiper-slide-active h2 {
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-  }
-
   .content h3 {
       color: #fff;
       font-family: "Monoton", sans-serif;
@@ -244,7 +227,7 @@
 
 .learn-more .text {
     background: linear-gradient(90deg, #f7973b 0%, #f15829 100%);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 1;
     position: relative;
@@ -252,11 +235,7 @@
     font-weight: 0;
     margin: auto;
 }
-.mySwiper_b .swiper-slide-active h2 {
-  color: #fff;
-  font-size: 12px;
-  font-weight: bold;
-  }
+
 }
 
 @import url("https://fonts.googleapis.com/css?family=Mukta:700");
@@ -273,7 +252,7 @@ display: flex;
 
 .learn-more .text {
 background: linear-gradient(90deg, #f7973b 0%, #f15829 100%);
-background-clip: text;
+-webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 z-index: 1;
 position: relative;
@@ -346,7 +325,6 @@ transition: all 0.3s ease;
 
 .mySwiper_b .swiper-slide-active h2 {
 color: #fff;
-font-size: 33px;
 font-weight: bold;
 }
 
@@ -369,3 +347,13 @@ transform: scale(1.05);
 height: 20px;
 width: 100%;
 }
+
+@media only screen and (min-width: 460) {
+  .mySwiper_b .swiper-slide-active h2 {
+    color: #fff;
+    font-size: 18px!important;
+    font-weight: bold;
+}
+}
+
+

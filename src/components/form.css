@@ -1,0 +1,152 @@
+.custom-input,
+.custom-textarea {
+  width: 100%;
+  color: rgba(2, 8, 48, 1);
+  text-align: center;
+  justify-content: center;
+}
+::placeholder {
+  color: rgba(2, 8, 48, 1);
+  opacity: 1; /* Firefox */
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: rgba(2, 8, 48, 1);
+}
+.placeholder-green::placeholder {
+  color: rgb(6, 10, 34);
+  background-color: transparent;
+}
+input {
+  width: 100%;
+}
+.custom-input:hover,
+textarea:hover {
+  background: transparent;
+  border: 1px solid #090c0f;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+
+.custom-input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+  border: 1px solid #090c0f;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+#FORM_MOBILE {
+  background-image: url("/public/Group 103.png");
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+#FORM_MOBILE h1 {
+  font-size: 50px;
+}
+#button_5 {
+  display: none;
+}
+.form_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 170px;
+}
+
+.form_logo img {
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}
+@media only screen and (min-width: 768px) {
+  .FORM_Mob {
+    display: none;
+  }
+  .form_logo img {
+    margin-left: 0px;
+  }
+}
+.learn-more-abcd {
+  background: transparent;
+  border: 0px;
+  position: relative;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  color: white;
+  margin-top: 22px;
+}
+.learn-more-abcd .textd {
+  background: linear-gradient(90deg, #f7973b 0%, #f15829 100%);
+  -webkit-background-clip: text;
+  z-index: 1;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  font-weight: 300;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+}
+.learn-more-abcd::before {
+  width: 0%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(2, 8, 48, 1);
+  z-index: 0;
+  transition: 0.4s ease-in-out;
+  color: white;
+}
+.learn-more-abcd::after {
+  width: 30px;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(2, 8, 48, 1);
+  z-index: 0;
+  border-left: 2px solid white;
+  -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+  transition: 0.4s ease-in-out;
+}
+
+.learn-more-abc:hover::before {
+  width: 100%;
+}
+.learn-more-abc:hover::after {
+  left: 99.5%;
+}
+#line_witd {
+  border: 1px solid #020830;
+  width: 33px;
+  height: 1px;
+  margin-top: 42px;
+  margin-left: -8px;
+}
+@media only screen and (max-width: 460px) {
+  .form_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+  }
+  #FORM_MOBILE h1 {
+    font-size: 40px;
+  }
+}

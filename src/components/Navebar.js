@@ -5,7 +5,7 @@ const OverlayNav = () => {
   const [overlayWidth, setOverlayWidth] = useState(0);
 
   const openNav = () => {
-    setOverlayWidth('30%');
+    setOverlayWidth('');
   };
 
   const closeNav = () => {
