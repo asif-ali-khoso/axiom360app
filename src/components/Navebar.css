@@ -2,7 +2,6 @@
 * {
     margin: 0px;
   }
-  
   #Side_navigation {
     background: linear-gradient(0deg, #020830 0%, #020830 100%);
     position: fixed;
@@ -23,7 +22,6 @@
     text-align: center;
     font-weight: 600;
   }
-  
   .overlay-content{
     box-sizing: border-box;
     transition: all .35s ease;
@@ -59,7 +57,7 @@
     top: 0;
     border-top: 3px solid #896a14;
     border-right: 3px solid #64540f;
-    transform: translate(-100%, 50%);
+    transform: translate(-50%, 50%);
   }
   
   .overlay-content a:after {
@@ -68,7 +66,7 @@
     bottom: 0;
     border-bottom: 3px solid #64630f;
     border-left: 3px solid #896414;
-    transform: translate(100%, -50%)
+    transform: translate(50%, -50%);
   }
   
   .overlay-content a:hover:before,
@@ -92,13 +90,16 @@
     overflow-x: hidden;
     transition: 0.5s;
   }
-  
+  .custom-slide {
+    height: 50px; /* Set the height to 100px */
+  }  
   .overlay-content {
     position: relative;
     top: 25%;
-    width: 100%;
+    width: 40%;
     text-align: center;
     margin-top: 30px;
+    margin-left: 150px;
   }
   
   .overlay a {
@@ -133,9 +134,12 @@
       top: 15px;
       right: 35px;
     }
-  }
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
+    .overlay-content {
+      position: relative;
+      width: 50%;
+      text-align: center;
+      margin-left: 0px;
+    }
   }
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
@@ -155,17 +159,18 @@
       font-family: "Nova Square", sans-serif;
       font-family: "Open Sans", sans-serif;
   }
-    
+  .overlay-content {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    margin-left: 100px;
   }
-
-  /* Navebar.css */
-
-/* Your existing styles here */
-
+  }
 /* Add media query for smaller devices */
 @media only screen and (max-width: 768px) {
   #myNav.overlay {
-    width: 100%; /* Set the width to 100% for smaller devices */
+    width: 100%;
+    height: 357px; /* Set the width to 100% for smaller devices */
   }
    
   #Side_navigation {
@@ -179,8 +184,6 @@
     display: flex;
     align-items: center;
   }
-  
-
 }
 
   

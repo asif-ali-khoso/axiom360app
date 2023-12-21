@@ -2,8 +2,6 @@
 .custom-textarea {
   width: 100%;
   color: rgba(2, 8, 48, 1);
-  text-align: center;
-  justify-content: center;
 }
 ::placeholder {
   color: rgba(2, 8, 48, 1);
@@ -126,10 +124,10 @@ textarea:focus {
   transition: 0.4s ease-in-out;
 }
 
-.learn-more-abc:hover::before {
+.learn-more-abcd:hover::before {
   width: 100%;
 }
-.learn-more-abc:hover::after {
+.learn-more-abcd:hover::after {
   left: 99.5%;
 }
 #line_witd {

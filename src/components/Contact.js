@@ -1,56 +1,21 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import Fonm from "./Form";
-
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    contact: "",
-    email: "",
-    message: "",
-  });
-
-  const [errors, setErrors] = useState({});
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-    setErrors({}); // Clear errors when the user types
-  };
-
-  const handleSubmit = (e) => {
+  const sendMailData = (e) => {
     e.preventDefault();
-
-    const newErrors = {};
-    if (!formData.name.trim()) {
-      newErrors.name = "Name is required";
-    }
-    if (!formData.contact.trim()) {
-      newErrors.contact = "Contact is required";
-    }
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
-    }
-    if (!formData.message.trim()) {
-      newErrors.message = "Message is required";
-    }
-
-    if (Object.keys(newErrors).length === 0) {
-      console.log("Form submitted:", formData);
-      // Add your form submission logic here
-    } else {
-      setErrors(newErrors);
-    }
-  };
-
+    console.log("err")
+  }
   return (
     <div className="Contact_us">
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
-          <div className="col-lg-10 col-md-12">
+          <div className="col-lg-9 col-md-12">
             <h1>CONTACT US</h1>
           </div>
-          <div className="col-lg-2 col-md-12 d-flex justify-content-center align-items-center">
+          <div className="col-lg-3 col-md-12 d-flex justify-content-center align-items-center">
             <img src="Ellipse 20.svg" alt="Help Icon" className="img-fluid" />
+            <i class='fa fa-arrow-up' style={{border:'2px solid black', backgroundColor:'white',borderColor:'white', padding:'8px', margin:'0px', marginBottom:'45px'}}></i>
             <p>Need Help?</p>
           </div>
         </div>
@@ -61,58 +26,37 @@ function Contact() {
               <br />
               Let's Get In Touch
             </h3>
-            <form id="form" onSubmit={handleSubmit}>
+            <form id="form" onSubmit={sendMailData}>
               <input
                 type="text"
                 name="name"
                 placeholder="NAME"
-                className={`mb-2 custom-input w-100 ${
-                  errors.name ? "is-invalid" : ""
-                }`}
-                value={formData.name}
-                onChange={handleChange}
+                className="mb-2 custom-input w-100"
+                required
               />
-              {errors.name && (
-                <div className="invalid-feedback">{errors.name}</div>
-              )}
+
               <input
                 type="text"
                 name="contact"
                 placeholder="CONTACT US"
-                className={`mb-2 custom-input w-100 ${
-                  errors.contact ? "is-invalid" : ""
-                }`}
-                value={formData.contact}
-                onChange={handleChange}
+                className="mb-2 custom-input w-100"
+                required
               />
-              {errors.contact && (
-                <div className="invalid-feedback">{errors.contact}</div>
-              )}
+
               <input
                 type="text"
                 name="email"
                 placeholder="EMAIL"
-                className={`mb-2 custom-input w-100 ${
-                  errors.email ? "is-invalid" : ""
-                }`}
-                value={formData.email}
-                onChange={handleChange}
+                className="mb-2 custom-input w-100"
+                required
               />
-              {errors.email && (
-                <div className="invalid-feedback">{errors.email}</div>
-              )}
               <textarea
                 name="message"
                 placeholder="TYPE YOUR MESSAGE HERE"
-                className={`custom-input w-100 ${
-                  errors.message ? "is-invalid" : ""
-                }`}
-                value={formData.message}
-                onChange={handleChange}
+                className="custom-input w-100"
+                required
               ></textarea>
-              {errors.message && (
-                <div className="invalid-feedback">{errors.message}</div>
-              )}
+             
             </form>
             <div className="row">
               <div className="col-lg-8">
