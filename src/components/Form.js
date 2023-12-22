@@ -63,41 +63,41 @@ function Example() {
                 <br />
                 Let's Get In <br /> Touch
               </h1>
+              <form target="_blank"
+              action="https://formsubmit.co/asif.ali@axiom360solutions.com"
+              method="POST">
               <input
-                type="text"
+                type="text"name="name"
                 className="custom-input mb-2 mr-sm-2 placeholder-green"
-                placeholder="NAME"
+                placeholder="NAME"required
               />
               <br />
               <input
-                type="text"
+                type="text"name="contactus"
                 className="custom-input mb-2 mr-sm-2 placeholder-green"
-                placeholder="CONTACT US"
+                placeholder="CONTACT US"required
               />
               <br />
               <input
-                type="text"
+                type="text"name="email"
                 className="custom-input mb-2 mr-sm-2 placeholder-green"
-                placeholder="EMAIL"
+                placeholder="EMAIL"required
               />
               <br />
-              <textarea
+              <textarea type="text"
                 name="message"
                 placeholder="TYPE YOUR MESSAGE HERE"
-                className={`custom-input w-100 ${
-                  errors.message ? "is-invalid" : ""
-                }`}
-                value={message}
-                onChange={handleMessageChange}
-              ></textarea>
-            </div>
-          </div>
-          <div className="d-flex justify-content-center" id="button_4">
+                className="custom-input w-100" required></textarea>
+                <div className="d-flex justify-content-center" id="button_4">
             <button className="learn-more-abcd" type="submit">
               <span className="textd">Submit Information</span>
             </button>
             <span id="line_witd"></span>
           </div>
+              </form>
+            </div>
+          </div>
+        
         </Modal.Body>
       </Modal>
     </div>
