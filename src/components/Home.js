@@ -1,3 +1,4 @@
+//home_page axiom_360//
 import React, { useState } from "react";
 import "./Home.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -25,11 +26,13 @@ function Homecontent() {
                 reality to make your brand go from ordinary to extraordinary.
                 Let’s take your business to the next level!
               </p>
-              <div className="d-flex">
-                <button className="learn-more justify-content-center align-content-center">
-                  <span className="text">Explore Services</span>
-                </button>
-                <span id="line"></span>
+              <div className="Expolre">
+                <div className="d-flex">
+                  <button className="learn-more justify-content-center align-content-center">
+                    <span className="text">Explore Services</span>
+                  </button>
+                  <span id="line"></span>
+                </div>
               </div>
             </div>
             <div className="col-lg-6 col-sm-12 text-center">

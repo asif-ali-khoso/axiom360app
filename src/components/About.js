@@ -1,5 +1,5 @@
+//aboutus_page axiom_360//
 import "./About.css";
-
 function About() {
   return (
     <div className="About_us justify-content-center">
@@ -48,7 +48,8 @@ function About() {
               <h6>Let’s Get Started</h6>
               <p id="text_letstarted">
                 Lorem ipsum is simply dummy text of the printing and
-                typesetting. Lorem Ipsum<br /> has been the industry’s standard dummy.
+                typesetting. Lorem Ipsum
+                <br /> has been the industry’s standard dummy.
               </p>
             </div>
             <div className="col-lg-2 col-md-2 col-sm-2">

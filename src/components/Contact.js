@@ -1,11 +1,12 @@
+//Contact_page axiom_360//
 import React, { useState } from "react";
 import "./Contact.css";
 import Fonm from "./Form";
 function Contact() {
   const sendMailData = (e) => {
     e.preventDefault();
-    console.log("err")
-  }
+    console.log("err");
+  };
   return (
     <div className="Contact_us">
       <div className="container">
@@ -15,7 +16,17 @@ function Contact() {
           </div>
           <div className="col-lg-3 col-md-12 d-flex justify-content-center align-items-center">
             <img src="Ellipse 20.svg" alt="Help Icon" className="img-fluid" />
-            <i class='fa fa-arrow-up' style={{border:'2px solid black', backgroundColor:'white',borderColor:'white', padding:'8px', margin:'0px', marginBottom:'45px'}}></i>
+            <i
+              class="fa fa-arrow-up"
+              style={{
+                border: "2px solid black",
+                backgroundColor: "white",
+                borderColor: "white",
+                padding: "8px",
+                margin: "0px",
+                marginBottom: "45px",
+              }}
+            ></i>
             <p>Need Help?</p>
           </div>
         </div>
@@ -56,7 +67,6 @@ function Contact() {
                 className="custom-input w-100"
                 required
               ></textarea>
-             
             </form>
             <div className="row">
               <div className="col-lg-8">

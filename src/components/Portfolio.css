@@ -83,6 +83,10 @@
   .port img{
     max-width: 630px;
   }
+  .Portfolio {
+    margin-top: 60px;
+    padding: 20px;
+}
 }
 @media only screen and (max-width: 600px) {
   .mySwiperCustom {
@@ -91,12 +95,80 @@
   .port img{
     max-width: 333px;
   }
+  .Portfolio {
+    margin-top: 60px;
+    padding: 20px;
+}
 }
 @media only screen and (max-width: 460px) {
-  .port img{
-    max-width: 300px;
-  }
   .mySwiperCustom {
-    height: 200px;
+    height: 230px;
+  }
+  .Portfolio {
+    margin-top: 60px;
+    padding: 20px;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+  .Portfolio {
+    padding: 94px 23px;
+    background-image: url("/public/Group 104 (1).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 100%;
+  }
+  .Portfolio h1 {
+    font-family: Monoton;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+  }
+  .Portfolio p {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .port img{
+    max-width: 630px;
+  }
+  /* Updated class name for custom Swiper */
+  .mySwiperCustom {
+    height: 350px;
+  }
+  
+  /* Customize the color of pagination bullets */
+  .mySwiperCustom .swiper-pagination-bullet {
+    border: 1px solid black;
+    background-color: white;
+  }
+  
+  /* Customize the color of the active pagination bullet */
+  .mySwiperCustom .swiper-pagination-bullet-active {
+    background-color: black;
+  }
+  
+  .Portfolio {
+    text-align: center;
+  }
+  
+  .Design {
+    font-size: 2em;
+  }
+  
+  .Company {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+  
+  .mySwiperCustom {
+    width: 100%; 
+    margin: 0 auto; /* Center the Swiper */
   }
 }
