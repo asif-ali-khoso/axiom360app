@@ -64,7 +64,7 @@ function Example() {
                 Let's Get In <br /> Touch
               </h1>
               <form target="_blank"
-              action="https://formsubmit.co/asif.ali@axiom360solutions.com"
+              action="https://formsubmit.co/info@kinggoldbanquet.com"
               method="POST">
               <input
                 type="text"name="name"
@@ -73,7 +73,7 @@ function Example() {
               />
               <br />
               <input
-                type="text"name="contactus"
+                type="number"name="contactus"
                 className="custom-input mb-2 mr-sm-2 placeholder-green"
                 placeholder="CONTACT US"required
               />

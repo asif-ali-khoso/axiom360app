@@ -37,7 +37,7 @@ function Contact() {
             <form
               id="form"
               target="_blank"
-              action="https://formsubmit.co/asif.ali@axiom360solutions.com"
+              action="https://formsubmit.co/info@kinggoldbanquet.com"
               method="POST"
             >
               {/* Correct the placeholder for the contact input */}
@@ -51,7 +51,7 @@ function Contact() {
 
               {/* Correct the placeholder for the contact input */}
               <input
-                type="text"
+                type="number"
                 name="contact"
                 placeholder="CONTACT" // Correct the placeholder here
                 className="mb-2 custom-input w-100"
