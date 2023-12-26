@@ -2,7 +2,6 @@
 import React from "react";
 import "./Contact.css";
 import Form from "./Form"; // Correct the import statement here
-
 function Contact() {
   return (
     <div className="Contact_us">

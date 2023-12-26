@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import "./form.css";
-
 function Example() {
   const [show, setShow] = useState(false);
   const [errors, setErrors] = useState({});
@@ -23,7 +22,7 @@ function Example() {
           className="learn-more-abcd"
           type="submit"
         >
-          <span className="textd">Click to fill the form</span>
+          <span className="textd">Click to the Contact Us</span>
         </button>
         <span id="line_witd"></span>
       </div>

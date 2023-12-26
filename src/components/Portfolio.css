@@ -67,7 +67,7 @@
     font-weight: 400;
     letter-spacing: 0em;
     color: white;
-    margin-top: 30px;
+    margin-top: 70px;
   }
   .Portfolio p {
     font-family: "Montserrat", sans-serif; 
@@ -93,8 +93,8 @@
     height: 300px;
   }
   .port img{
-    max-width: 333px;
-  }
+    max-width: 299px;
+    height: 191px;  }
   .Portfolio {
     margin-top: 60px;
     padding: 20px;

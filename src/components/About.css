@@ -229,6 +229,7 @@
   .About_us h1 {
     font-size: 35px;
     margin-bottom: 0.2rem;
+    margin-top:20px;
   }
   .About_us h6 {
     font-family: "Lato", sans-serif;
@@ -359,7 +360,7 @@
     border-left: 2px solid white;
     clip-path: polygon(100% 50%, 0 0, 0 100%);
     transition: 0.4s ease-in-out;
-    margin-top: 5px;
+    margin-top: 3px;
   }
   .learn-more-abbr::before {
     width: 0%;
@@ -435,33 +436,61 @@
     font-size: 12px;
     text-align: center;
   }
-  .learn-more-abbr .text {
-    width: 100%;
-    -webkit-background-clip: text;
-    z-index: 1;
-    position: relative;
-    transition: 0.3s ease-in-out;
-    font-weight: 300;
-    color: white;
-    font-size: 20px;
-    margin-top: 5px;
-  }
-  .learn-more-abbr .text {
-    width: 100%;
-    -webkit-background-clip: text;
-    z-index: 1;
-    position: relative;
-    transition: 0.3s ease-in-out;
-    font-weight: 300;
-    color: white;
-    font-size: 15px;
-  }
-  .learn-more-abbr {
-    background: transparent;
-    border: 0px;
-    position: relative;
-    padding: 0.8rem 1rem;
-  }
+ 
+.learn-more-abbr {
+  background: transparent;
+  border: 0px;
+  position: relative;
+  padding: 0.6rem 1rem;
+  font-size: 15px;
+}
+
+.learn-more-abbr .text {
+  width: 100%;
+  -webkit-background-clip: text;
+  z-index: 1;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  font-weight: 300;
+  color: white;
+  font-size: 15px;
+}
+
+.learn-more-abbr::before {
+  width: 0%;
+  height: 37px;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #f7973b;
+  z-index: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.learn-more-abbr::after {
+  width: 25px;
+  height: 40px;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #f7973b;
+  z-index: 0;
+  border-left: 2px solid white;
+  -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+  transition: 0.4s ease-in-out;
+}
+
+.learn-more-abbr:hover::before {
+  width: 100%;
+}
+
+.learn-more-abbr:hover::after {
+  left: 99.5%;
+}
+
   .getstart_section {
     margin-top: 20px;
     height: 100%; /* Adjust margin for smaller screens */
