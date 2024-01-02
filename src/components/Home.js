@@ -72,11 +72,7 @@ function Homecontent() {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="swiper-content">
-                    <h2
-                      style={{
-                        fontWeight: activeIndex === 2 ? "bold" : "normal",
-                      }}
-                    >
+                    <h2 style={{ fontWeight: "normal" }}>
                       SOFTWARE DEVELOPMENT
                       <br />
                     </h2>
@@ -84,11 +80,7 @@ function Homecontent() {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="swiper-content">
-                    <h2
-                      style={{
-                        fontWeight: activeIndex === 2 ? "bold" : "normal",
-                      }}
-                    >
+                    <h2 style={{ fontWeight: "normal" }}>
                       CREATIVE WRITING
                     </h2>
                   </div>
