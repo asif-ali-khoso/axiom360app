@@ -132,7 +132,7 @@
   left: 0px;
   background: #f7973b;
   z-index: 0;
-  border-left: 2px solid white;
+  border-left: 2px solid #f7973b;
   -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
   clip-path: polygon(100% 50%, 0 0, 0 100%);
   transition: 0.4s ease-in-out;
@@ -288,7 +288,7 @@
     left: 0px;
     background: #f7973b;
     z-index: 0;
-    border-left: 2px solid white;
+    border-left: 2px solid #f7973b;
     clip-path: polygon(100% 50%, 0 0, 0 100%);
     transition: 0.4s ease-in-out;
   }
@@ -357,7 +357,7 @@
     left: 0px;
     background: #f7973b;
     z-index: 0;
-    border-left: 2px solid white;
+    border-left: 2px solid #f7973b;
     clip-path: polygon(100% 50%, 0 0, 0 100%);
     transition: 0.4s ease-in-out;
     margin-top: 3px;
@@ -477,7 +477,7 @@
   left: 0px;
   background: #f7973b;
   z-index: 0;
-  border-left: 2px solid white;
+  border-left: 2px solid #f7973b;
   -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
   clip-path: polygon(100% 50%, 0 0, 0 100%);
   transition: 0.4s ease-in-out;
@@ -633,7 +633,7 @@
     left: 0px;
     background: #f7973b;
     z-index: 0;
-    border-left: 2px solid white;
+    border-left: 2px solid #f7973b;
     -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
     clip-path: polygon(100% 50%, 0 0, 0 100%);
     transition: 0.4s ease-in-out;
